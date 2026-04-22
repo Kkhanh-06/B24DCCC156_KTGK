@@ -36,6 +36,22 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
+	{
+		path: '/study',
+		name: 'Quản lý khóa học',
+		icon: 'BookOutlined',
+		routes: [
+			{
+				path: '/study',
+				redirect: '/study/khoa-hoc',
+			},
+			{
+				name: 'Danh sách khóa học',
+				path: '/study/khoa-hoc',
+				component: './Study/DanhSachKhoaHoc',
+			},
+		],
+	},
 
 	// DANH MUC HE THONG
 	// {
